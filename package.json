@@ -1,0 +1,16 @@
+{
+  "name": "interasky-offline",
+  "version": "1.0.0",
+  "description": "Interasky offline website",
+  "scripts": {
+    "build": "tailwindcss -i ./css/input.css -o ./css/styles.css --minify"
+  },
+  "dependencies": {
+    "@tailwindcss/container-queries": "latest",
+    "@tailwindcss/forms": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2"
+  }
+}
