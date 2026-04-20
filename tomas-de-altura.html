@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Interasky | Tomas de Altura con Drones</title>
+  <meta name="description"
+    content="Interasky – Tomas de altura con drones: fotografía inmobiliaria, georreferencia aérea, videos corporativos, inspección de obras y eventos especiales." />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#0053a6", "primary-container": "#046bd2", "on-primary": "#ffffff", "on-primary-container": "#ebefff", "primary-fixed": "#d6e3ff", "primary-fixed-dim": "#aac7ff", "surface": "#f8f9ff", "surface-container-low": "#eef4ff", "surface-container": "#e5eefe", "surface-container-high": "#e0e9f8", "surface-container-highest": "#dae3f2", "surface-container-lowest": "#ffffff", "on-surface": "#131c27", "on-surface-variant": "#414753", "secondary-container": "#d7e0f0", "on-secondary-container": "#5a6370", "tertiary": "#9b2e00", "outline-variant": "#c1c6d5" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "fontFamily": { "headline": ["Inter", "sans-serif"], "body": ["Inter", "sans-serif"], "label": ["Inter", "sans-serif"], "brand": ["Montserrat", "sans-serif"] } } } }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    #mobile-menu {
+      display: none;
+    }
+
+    #mobile-menu.open {
+      display: block;
+    }
+  </style>
+</head>
+
+<body class="bg-surface text-on-surface">
+  <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-[0_4px_30px_rgba(19,28,39,0.04)]">
+    <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+      <a href="index.html" class="text-xl font-bold tracking-tighter text-slate-900 font-brand flex items-center gap-2">
+        <span
+          class="w-8 h-8 bg-gradient-to-br from-primary to-primary-container rounded-lg flex items-center justify-center text-white text-xs font-bold">ia</span>
+        Interasky
+      </a>
+      <div class="hidden lg:flex items-center space-x-5 text-sm font-medium">
+        <a class="text-slate-600 hover:text-blue-600 transition-colors" href="index.html">Inicio</a>
+        <a class="text-slate-600 hover:text-blue-600 transition-colors" href="ia-para-negocios.html">IA para
+          Negocios</a>
+        <a class="text-blue-600 font-bold border-b-2 border-blue-600 pb-0.5" href="tomas-de-altura.html">Tomas de
+          Altura</a>
+        <a class="text-slate-600 hover:text-blue-600 transition-colors" href="diseno-web.html">Diseño Web</a>
+        <a class="text-slate-600 hover:text-blue-600 transition-colors" href="estrategia-comercial.html">Estrategia
+          Comercial</a>
+        <a class="text-slate-600 hover:text-blue-600 transition-colors" href="studio-creativo.html">Studio Creativo</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/573508485527" target="_blank"
+          class="bg-primary hover:bg-primary-container text-white px-5 py-2.5 rounded-xl text-sm font-medium hidden sm:block transition-all">Conversemos</a>
+        <button id="menu-toggle" class="lg:hidden p-2 flex flex-col gap-1.5">
+          <span class="w-6 h-0.5 bg-slate-700 block"></span><span class="w-6 h-0.5 bg-slate-700 block"></span><span
+            class="w-6 h-0.5 bg-slate-700 block"></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="lg:hidden bg-white border-t border-slate-100 px-6 py-4 space-y-3">
+      <a class="block text-sm py-2 text-slate-600" href="index.html">Inicio</a>
+      <a class="block text-sm py-2 text-slate-600" href="ia-para-negocios.html">IA para Negocios</a>
+      <a class="block text-sm py-2 font-bold text-blue-600" href="tomas-de-altura.html">Tomas de Altura</a>
+      <a class="block text-sm py-2 text-slate-600" href="diseno-web.html">Diseño Web</a>
+      <a class="block text-sm py-2 text-slate-600" href="estrategia-comercial.html">Estrategia Comercial</a>
+      <a class="block text-sm py-2 text-slate-600" href="studio-creativo.html">Studio Creativo</a>
+    </div>
+  </nav>
+  <main class="pt-20">
+    <section class="relative min-h-[921px] flex items-center px-8 overflow-hidden bg-surface">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-12 items-center relative z-10">
+        <div class="md:col-span-6 lg:col-span-5">
+          <span
+            class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-[10px] font-bold tracking-widest uppercase mb-6">PERSPECTIVAS
+            ÚNICAS</span>
+          <h1
+            class="text-5xl md:text-7xl font-extrabold text-on-surface tracking-tighter leading-[0.95] mb-8 font-headline">
+            Tomas de Altura:<br />
+            <span class="text-primary-container">Impacto, Perspectiva, Precisión</span>
+          </h1>
+          <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed mb-10 max-w-xl font-light">Soluciones
+            visuales aéreas de alta resolución para empresas, hoteles, obras y eventos. Redefinimos la escala de sus
+            proyectos.</p>
+          <div class="flex flex-wrap gap-4">
+            <button
+              class="px-8 py-4 bg-gradient-to-r from-primary to-primary-container text-white rounded-xl font-bold text-lg shadow-xl shadow-primary/25 hover:shadow-2xl hover:scale-[1.02] transition-all">Solicitar
+              Presupuesto</button>
+            <button
+              class="px-8 py-4 bg-surface-container-highest text-primary rounded-xl font-bold text-lg hover:bg-surface-container-high transition-all">Ver
+              Portafolio</button>
+          </div>
+        </div>
+        <div class="md:col-span-6 lg:col-span-7 relative">
+          <div class="aspect-[4/5] md:aspect-square rounded-[2rem] overflow-hidden shadow-2xl relative">
+            <img class="w-full h-full object-cover" alt="Drone cinematográfico sobre ciudad al atardecer" <img
+              src="images/Dronecitycover.jpg" Tomas increiblesl h-full object-cover" />
+
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+          </div>
+          <div class="absolute -bottom-6 -left-6 glass-panel p-6 rounded-2xl shadow-2xl max-w-[240px]">
+            <p class="text-primary font-bold text-sm mb-1 uppercase tracking-widest">Resolución 4K</p>
+            <p class="text-on-surface text-sm leading-snug">Claridad absoluta en cada frame, capturando detalles
+              invisibles desde el suelo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="absolute top-1/4 right-0 w-1/3 h-1/2 bg-primary/5 blur-[120px] rounded-full -z-10"></div>
+    </section>
+    <section class="py-32 px-8 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-20">
+          <h2 class="text-sm font-bold text-primary tracking-[0.2em] uppercase mb-4">Nuestra Especialización</h2>
+          <h3 class="text-4xl md:text-5xl font-bold tracking-tight text-on-surface">Los 6 Pilares Visuales</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-surface-container-lowest p-10 rounded-[2rem] hover:shadow-xl transition-all group border border-transparent hover:border-primary/5">
+            <div
+              class="w-16 h-16 rounded-2xl bg-surface-container mb-8 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-4xl">apartment</span>
+            </div>
+            <h4 class="text-2xl font-bold mb-4 text-on-surface">Fotografía Inmobiliaria</h4>
+            <p class="text-on-surface-variant leading-relaxed">Vistas panorámicas que resaltan el valor y la ubicación
+              privilegiada de sus propiedades.</p>
+          </div>
+          <div
+            class="bg-surface-container-lowest p-10 rounded-[2rem] hover:shadow-xl transition-all group border border-transparent hover:border-primary/5">
+            <div
+              class="w-16 h-16 rounded-2xl bg-surface-container mb-8 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-4xl">map</span>
+            </div>
+            <h4 class="text-2xl font-bold mb-4 text-on-surface">Georreferencia Aérea</h4>
+            <p class="text-on-surface-variant leading-relaxed">Cartografía de alta precisión para estudios topográficos
+              y planeamiento urbano avanzado.</p>
+          </div>
+          <div
+            class="bg-surface-container-lowest p-10 rounded-[2rem] hover:shadow-xl transition-all group border border-transparent hover:border-primary/5">
+            <div
+              class="w-16 h-16 rounded-2xl bg-surface-container mb-8 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-4xl">movie</span>
+            </div>
+            <h4 class="text-2xl font-bold mb-4 text-on-surface">Videos Corporativos</h4>
+            <p class="text-on-surface-variant leading-relaxed">Narrativas visuales que elevan el prestigio de su marca
+              con tomas cinematográficas.</p>
+          </div>
+          <div
+            class="bg-surface-container-lowest p-10 rounded-[2rem] hover:shadow-xl transition-all group border border-transparent hover:border-primary/5">
+            <div
+              class="w-16 h-16 rounded-2xl bg-surface-container mb-8 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-4xl">hotel</span>
+            </div>
+            <h4 class="text-2xl font-bold mb-4 text-on-surface">Promoción Hotelera</h4>
+            <p class="text-on-surface-variant leading-relaxed">Destaque sus instalaciones y entorno natural con ángulos
+              que invitan al descanso.</p>
+          </div>
+          <div
+            class="bg-surface-container-lowest p-10 rounded-[2rem] hover:shadow-xl transition-all group border border-transparent hover:border-primary/5">
+            <div
+              class="w-16 h-16 rounded-2xl bg-surface-container mb-8 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-4xl">construction</span>
+            </div>
+            <h4 class="text-2xl font-bold mb-4 text-on-surface">Inspección de Obras</h4>
+            <p class="text-on-surface-variant leading-relaxed">Seguimiento técnico y estructural con acceso a puntos
+              críticos sin riesgos humanos.</p>
+          </div>
+          <div
+            class="bg-surface-container-lowest p-10 rounded-[2rem] hover:shadow-xl transition-all group border border-transparent hover:border-primary/5">
+            <div
+              class="w-16 h-16 rounded-2xl bg-surface-container mb-8 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-4xl">celebration</span>
+            </div>
+            <h4 class="text-2xl font-bold mb-4 text-on-surface">Eventos Especiales</h4>
+            <p class="text-on-surface-variant leading-relaxed">Inmortalice momentos masivos desde una perspectiva
+              omnisciente y emocionante.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-32 px-8 overflow-hidden">
+      <div class="max-w-7xl mx-auto space-y-48">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div class="relative order-2 md:order-1">
+            <div class="aspect-[16/10] bg-surface-container-highest rounded-[3rem] overflow-hidden">
+              <img class="w-full h-full object-cover" alt="Resort de lujo vista aérea" <img src="images/hotel.png"
+                alt="hotellass=" w-full h-full object-cover" />
+
+
+            </div>
+            <div class="absolute -top-12 -right-12 w-48 h-48 bg-primary/10 rounded-full blur-3xl -z-10"></div>
+          </div>
+          <div class="order-1 md:order-2 px-4">
+            <label class="text-xs font-bold text-tertiary tracking-widest uppercase mb-4 block">Turismo de Lujo</label>
+            <h3 class="text-4xl font-bold mb-6 tracking-tight">Experiencias Inmersivas para el Sector Hotelero</h3>
+            <p class="text-lg text-on-surface-variant leading-relaxed mb-8">Transformamos la percepción de su resort o
+              complejo vacacional. Nuestras cámaras capturan no solo la arquitectura, sino la relación entre la
+              infraestructura y el entorno natural.</p>
+            <ul class="space-y-4">
+              <li class="flex items-center gap-3 text-on-surface"><span
+                  class="material-symbols-outlined text-primary text-xl">check_circle</span>Recorridos virtuales fluidos
+              </li>
+              <li class="flex items-center gap-3 text-on-surface"><span
+                  class="material-symbols-outlined text-primary text-xl">check_circle</span>Integración en campañas
+                digitales</li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div class="px-4">
+            <label class="text-xs font-bold text-primary tracking-widest uppercase mb-4 block">Ingeniería Aérea</label>
+            <h3 class="text-4xl font-bold mb-6 tracking-tight">Control y Seguimiento de Infraestructura</h3>
+            <p class="text-lg text-on-surface-variant leading-relaxed mb-8">Proporcionamos ortomosaicos y nubes de
+              puntos de alta densidad que permiten a los ingenieros realizar mediciones y auditorías sin pisar la zona
+              de riesgo.</p>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="p-4 bg-surface-container rounded-2xl"><span
+                  class="block text-2xl font-bold text-primary mb-1">95%</span><span
+                  class="text-xs text-on-surface-variant uppercase">Reducción de Riesgos</span></div>
+              <div class="p-4 bg-surface-container rounded-2xl"><span
+                  class="block text-2xl font-bold text-primary mb-1">40%</span><span
+                  class="text-xs text-on-surface-variant uppercase">Ahorro en Tiempos</span></div>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="aspect-[16/10] bg-surface-container-highest rounded-[3rem] overflow-hidden">
+              <img class="w-full h-full object-cover" alt="Obra de construcción vista aérea" <img src="images/obras.png"
+                alt="inspección de obras" full object-cover" />
+
+              >
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-32 px-8">
+      <div
+        class="max-w-5xl mx-auto glass-panel p-16 md:p-24 rounded-[3rem] text-center relative overflow-hidden shadow-2xl">
+        <div class="absolute inset-0 bg-primary/5 -z-10"></div>
+        <div class="relative z-10">
+          <h2 class="text-4xl md:text-6xl font-bold tracking-tight mb-8 font-brand">Eleva tu Visión</h2>
+          <p class="text-xl text-on-surface-variant max-w-2xl mx-auto mb-12 font-light">¿Listo para ver su proyecto
+            desde una nueva perspectiva? Nuestro equipo de pilotos certificados está preparado para despegar.</p>
+          <button
+            class="px-12 py-5 bg-primary text-white rounded-full font-bold text-xl shadow-2xl shadow-primary/40 hover:bg-primary-container hover:scale-105 transition-all">Solicitar
+            Presupuesto</button>
+          <p class="mt-8 text-on-surface-variant text-sm font-medium">Asesoría técnica sin compromiso en menos de 24
+            horas.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="w-full border-t border-slate-200/15 bg-slate-50">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 px-8 py-16 max-w-7xl mx-auto">
+      <div class="col-span-2 md:col-span-1">
+        <div class="flex items-center gap-2 mb-6"><span
+            class="w-8 h-8 bg-gradient-to-br from-primary to-primary-container rounded-lg flex items-center justify-center text-white text-xs font-bold">ia</span><span
+            class="text-lg font-bold text-slate-900 font-brand">Interasky</span></div>
+        <p class="text-slate-500 text-sm leading-relaxed">Liderando la transformación visual a través de la inteligencia
+          aérea.
+
+          Whatsapp +57 350 848 55 27</p>
+      </div>
+      <div>
+        <h5 class="font-bold text-slate-900 mb-6 text-sm uppercase tracking-widest">Servicios</h5>
+        <ul class="space-y-4 text-sm">
+          <li><a class="text-slate-500 hover:text-primary" href="ia-para-negocios.html">IA para Negocios</a></li>
+          <li><a class="text-slate-500 hover:text-primary" href="tomas-de-altura.html">Tomas de Altura</a></li>
+          <li><a class="text-slate-500 hover:text-primary" href="diseno-web.html">Diseño Web</a></li>
+          <li><a class="text-slate-500 hover:text-primary" href="estrategia-comercial.html">Estrategia Comercial</a>
+          </li>
+          <li><a class="text-slate-500 hover:text-primary" href="studio-creativo.html">Studio Creativo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-bold text-slate-900 mb-6 text-sm uppercase tracking-widest">Compañía</h5>
+        <ul class="space-y-4 text-sm">
+          <li><a class="text-slate-500 hover:text-primary" href="#">Portafolio</a></li>
+          <li><a class="text-slate-500 hover:text-primary" href="#">Privacidad</a></li>
+          <li><a class="text-slate-500 hover:text-primary" href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-bold text-slate-900 mb-6 text-sm uppercase tracking-widest">Suscripción</h5>
+        <div class="flex gap-2"><input class="bg-surface-container-low border-none rounded-xl text-sm w-full"
+            placeholder="Tu email" type="email" /><button class="bg-primary text-white p-2 rounded-xl"><span
+              class="material-symbols-outlined">arrow_forward</span></button></div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-8 py-8 border-t border-slate-200/10">
+      <p class="text-slate-500 text-xs">© 2025 Interasky. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('menu-toggle').addEventListener('click', function () { document.getElementById('mobile-menu').classList.toggle('open'); });</script>
+</body>
+
+</html>
