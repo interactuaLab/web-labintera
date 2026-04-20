@@ -1,1 +1,354 @@
-<h1> interactua page </h1>
+<!DOCTYPE html>
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+ <!--Icon carga el icono en la pagina web-->
+    <link rel="icon" type="image/png" href="images/icon.png">
+<title>Interasky | Transformación Digital con IA</title>
+<meta name="description" content="Interasky – Llevamos tu marca al siguiente nivel con soluciones digitales inteligentes: IA, drones, diseño web, estrategia comercial y producción audiovisual."/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Inter & Montserrat -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#ffb59d",
+                    "on-primary-fixed": "#001b3e",
+                    "on-surface": "#131c27",
+                    "tertiary-container": "#c53c00",
+                    "surface-container-high": "#e0e9f8",
+                    "on-surface-variant": "#414753",
+                    "surface-variant": "#dae3f2",
+                    "surface": "#f8f9ff",
+                    "outline-variant": "#c1c6d5",
+                    "surface-container-highest": "#dae3f2",
+                    "primary": "#0053a6",
+                    "on-tertiary": "#ffffff",
+                    "surface-dim": "#d2dbea",
+                    "secondary-fixed-dim": "#bec7d6",
+                    "secondary": "#565f6c",
+                    "on-background": "#131c27",
+                    "primary-fixed": "#d6e3ff",
+                    "on-error": "#ffffff",
+                    "background": "#f8f9ff",
+                    "inverse-on-surface": "#eaf1ff",
+                    "on-tertiary-fixed": "#390b00",
+                    "on-primary-container": "#ebefff",
+                    "inverse-primary": "#aac7ff",
+                    "outline": "#727784",
+                    "surface-bright": "#f8f9ff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#131c27",
+                    "on-secondary-container": "#5a6370",
+                    "on-tertiary-fixed-variant": "#842500",
+                    "on-primary-fixed-variant": "#00458d",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#3e4754",
+                    "surface-container": "#e5eefe",
+                    "secondary-fixed": "#dae3f2",
+                    "primary-container": "#046bd2",
+                    "surface-tint": "#005db8",
+                    "error-container": "#ffdad6",
+                    "inverse-surface": "#28313d",
+                    "tertiary-fixed": "#ffdbd0",
+                    "error": "#ba1a1a",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#eef4ff",
+                    "primary-fixed-dim": "#aac7ff",
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#d7e0f0",
+                    "tertiary": "#9b2e00",
+                    "on-tertiary-container": "#ffebe5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"],
+                    "brand": ["Montserrat"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .hero-gradient { background: linear-gradient(135deg, rgba(0, 83, 166, 0.95) 0%, rgba(4, 107, 210, 0.85) 100%); }
+        #mobile-menu { display: none; }
+        #mobile-menu.open { display: block; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-[0_4px_30px_rgba(19,28,39,0.04)]">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+  <a href="index.html" class="text-xl font-bold tracking-tighter text-slate-900 dark:text-white font-brand flex items-center gap-2">
+    <span class="w-8 h-8 bg-gradient-to-br from-primary to-primary-container rounded-lg flex items-center justify-center text-white text-xs font-bold">ia</span>
+    Interasky
+  </a>
+  <div class="hidden lg:flex items-center space-x-6">
+    <a class="font-sans tracking-tight text-sm font-bold text-blue-600 border-b-2 border-blue-600 pb-0.5 transition-colors duration-300" href="index.html">Inicio</a>
+    <a class="font-sans tracking-tight text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors duration-300" href="ia-para-negocios.html">IA para Negocios</a>
+    <a class="font-sans tracking-tight text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors duration-300" href="tomas-de-altura.html">Tomas de Altura</a>
+    <a class="font-sans tracking-tight text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors duration-300" href="diseno-web.html">Diseño Web</a>
+    <a class="font-sans tracking-tight text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors duration-300" href="estrategia-comercial.html">Estrategia Comercial</a>
+    <a class="font-sans tracking-tight text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors duration-300" href="studio-creativo.html">Studio Creativo</a>
+  </div>
+  <div class="flex items-center gap-4">
+    <a href="https://wa.me/573508485527" target="_blank" class="bg-primary hover:bg-primary-container text-white px-6 py-2 rounded-xl text-sm font-medium transition-all scale-95 active:scale-90 hidden sm:block">
+      Conversemos
+    </a>
+    <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Menú">
+      <span class="w-6 h-0.5 bg-slate-700 block transition-all"></span>
+      <span class="w-6 h-0.5 bg-slate-700 block transition-all"></span>
+      <span class="w-6 h-0.5 bg-slate-700 block transition-all"></span>
+    </button>
+  </div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="lg:hidden bg-white border-t border-slate-100 px-6 py-4 space-y-3">
+  <a class="block text-sm font-bold text-blue-600 py-2" href="index.html">Inicio</a>
+  <a class="block text-sm font-medium text-slate-600 hover:text-blue-600 py-2" href="ia-para-negocios.html">IA para Negocios</a>
+  <a class="block text-sm font-medium text-slate-600 hover:text-blue-600 py-2" href="tomas-de-altura.html">Tomas de Altura</a>
+  <a class="block text-sm font-medium text-slate-600 hover:text-blue-600 py-2" href="diseno-web.html">Diseño Web</a>
+  <a class="block text-sm font-medium text-slate-600 hover:text-blue-600 py-2" href="estrategia-comercial.html">Estrategia Comercial</a>
+  <a class="block text-sm font-medium text-slate-600 hover:text-blue-600 py-2" href="studio-creativo.html">Studio Creativo</a>
+  <a href="https://wa.me/573508485527" target="_blank" class="w-full block text-center bg-primary text-white px-6 py-2.5 rounded-xl text-sm font-medium mt-2">Conversemos</a>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center pt-16 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Transformación Digital con IA" class="w-full h-full object-cover" <img src="images/Digital transformation.png"
+              alt="Transformación digítal en pantalla" class="w-full h-full object-cover"/>
+
+<div class="absolute inset-0 hero-gradient mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-3xl">
+<span class="label-md uppercase tracking-[0.2em] text-blue-200 font-bold mb-6 block">Innovación y Futuro</span>
+<h1 class="text-6xl md:text-8xl font-extrabold text-white tracking-tight leading-[0.95] mb-8 font-headline">
+                    Transformación <br/>Digital con IA.
+                </h1>
+<p class="text-xl md:text-2xl text-blue-50/80 leading-relaxed max-w-2xl font-light mb-12">
+                    Llevamos tu marca al siguiente nivel con soluciones digitales inteligentes, diseñadas para la nueva economía cognitiva.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<a href="ia-para-negocios.html" class="bg-surface-container-lowest text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-white transition-all shadow-lg active:scale-95 text-center">
+                        Comenzar Proyecto
+                    </a>
+<button class="text-white flex items-center gap-3 font-semibold text-lg hover:translate-x-2 transition-transform">
+                        Ver Portafolio 
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-5xl font-bold tracking-tighter text-on-surface mb-6">Excelencia en cada píxel.</h2>
+<p class="text-lg text-on-surface-variant">Fusionamos creatividad y tecnología para crear experiencias que trascienden lo convencional.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Service Card 1 -->
+<a href="diseno-web.html" class="group relative bg-surface-container-lowest p-6 rounded-xl shadow-[0_4px_30px_rgba(19,28,39,0.04)] transition-all hover:-translate-y-2 block">
+<div class="h-48 mb-8 rounded-lg overflow-hidden">
+<img alt="Diseño Web" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+
+<img src="images/diseño_web.jpg"
+              alt="Diseño Web" class="w-full h-full object-cover"/>
+<!-- Freepics -->
+
+</div>
+
+<h3 class="text-xl font-bold mb-3">Diseño Web de Vanguardia</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Interfaces fluidas y minimalistas que priorizan la experiencia del usuario final.</p>
+</a>
+<!-- Service Card 2 -->
+<a href="studio-creativo.html" class="group relative bg-surface-container-lowest p-6 rounded-xl shadow-[0_4px_30px_rgba(19,28,39,0.04)] transition-all hover:-translate-y-2 block">
+<div class="h-48 mb-8 rounded-lg overflow-hidden">
+<img alt="Motion Graphics" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+
+<img src="images/Motions.jpg"
+              alt="Motions Graphics" class="w-full h-full object-cover"/>
+<!-- Freepics -->
+
+</div>
+<h3 class="text-xl font-bold mb-3">Video y Gráficos en Movimiento</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Contenido visual dinámico que captura la esencia y el pulso de tu marca.</p>
+</a>
+<!-- Service Card 3 -->
+<a href="estrategia-comercial.html" class="group relative bg-surface-container-lowest p-6 rounded-xl shadow-[0_4px_30px_rgba(19,28,39,0.04)] transition-all hover:-translate-y-2 block">
+<div class="h-48 mb-8 rounded-lg overflow-hidden">
+<img alt="Estrategia Comercial" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+<img src="images/marketing.png"
+              alt="Estrategia comercial en pantalla" class="w-full h-full object-cover"/>
+
+
+</div>
+<h3 class="text-xl font-bold mb-3">Estrategia Comercial</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Canales de distribución y entrenamiento de equipos para un crecimiento escalable.</p>
+</a>
+<!-- Service Card 4 -->
+<a href="tomas-de-altura.html" class="group relative bg-surface-container-lowest p-6 rounded-xl shadow-[0_4px_30px_rgba(19,28,39,0.04)] transition-all hover:-translate-y-2 block">
+<div class="h-48 mb-8 rounded-lg overflow-hidden">
+<img alt="Tomas de Altura con Drones" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+<img src="images/drone.jpg"
+              alt="Drone en ciudad" class="w-full h-full object-cover"/>
+
+</div>
+<h3 class="text-xl font-bold mb-3">Impacto Aéreo con Drones</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Perspectivas únicas de alta definición para producciones cinematográficas.</p>
+</a>
+</div>
+</div>
+</section>
+<!-- AI Section (Expanded) -->
+<section class="py-32 bg-surface-container-low overflow-hidden relative">
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-widest mb-8">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+                        Nuevas Capacidades
+                    </div>
+<h2 class="text-4xl md:text-6xl font-bold tracking-tight text-on-surface mb-8 leading-[1.1] font-headline">
+                        Asesoría en IA para <br/><span class="text-primary">Pequeñas Empresas.</span>
+</h2>
+<p class="text-xl text-on-surface-variant mb-12 leading-relaxed font-light">
+                        Democratizamos la tecnología para que tu negocio crezca con herramientas de última generación. No necesitas un departamento de IT para ser una empresa inteligente.
+                    </p>
+<div class="space-y-8">
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined">auto_mode</span>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-2">Automatización de tareas</h4>
+<p class="text-on-surface-variant text-sm">Libera a tu equipo de la monotonía delegando procesos repetitivos a modelos de IA eficientes.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-2">Análisis de datos predictivo</h4>
+<p class="text-on-surface-variant text-sm">Entiende el futuro de tu mercado analizando patrones invisibles en tus datos actuales.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined">forum</span>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-2">Atención 24/7 con Chatbots</h4>
+<p class="text-on-surface-variant text-sm">Responde al instante y escala tus ventas sin importar la hora o el volumen de consultas.</p>
+</div>
+</div>
+</div>
+<div class="mt-12">
+<a href="ia-para-negocios.html" class="inline-block bg-primary text-white px-8 py-3.5 rounded-full font-bold hover:shadow-lg transition-all">
+                        Conocer más →
+                    </a>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-20 -right-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="relative rounded-2xl overflow-hidden shadow-2xl rotate-3">
+<img alt="IA para negocios" class="w-full h-[600px] object-cover"
+
+<img src="images/BIG_IA.png"
+              alt="IA PYMES" class="w-full h-full object-cover"/>
+
+
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-40 bg-surface">
+<div class="max-w-5xl mx-auto px-8 text-center">
+<h2 class="text-5xl md:text-7xl font-bold tracking-tight text-on-surface mb-12 font-headline">
+                Haz Realidad Tu Idea
+            </h2>
+<p class="text-xl text-on-surface-variant mb-16 max-w-2xl mx-auto">
+                Estamos listos para diseñar el futuro de tu marca. Hablemos sobre cómo nuestras soluciones digitales pueden transformar tu negocio.
+            </p>
+<div class="flex justify-center">
+<a href="https://wa.me/573508485527" target="_blank" class="inline-block bg-primary text-white text-xl font-bold px-12 py-6 rounded-full shadow-2xl hover:bg-primary-container transition-all hover:scale-105 active:scale-95">
+                    Conversemos
+                </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200/15 bg-slate-50">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 px-8 py-16 max-w-7xl mx-auto">
+<div class="col-span-2 md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+    <span class="w-8 h-8 bg-gradient-to-br from-primary to-primary-container rounded-lg flex items-center justify-center text-white text-xs font-bold">ia</span>
+    <span class="text-lg font-bold text-slate-900 font-brand">Interasky</span>
+</div>
+<p class="text-slate-500 text-sm leading-relaxed mb-6">
+                Redefiniendo el estándar digital a través de la inteligencia y el diseño.
+                Whatsapp +57 350 848 55 27.
+            </p>
+</div>
+<div>
+<h4 class="text-slate-900 font-bold text-sm uppercase tracking-widest mb-6">Servicios</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 text-sm hover:text-primary transition-colors" href="ia-para-negocios.html">IA para Negocios</a></li>
+<li><a class="text-slate-500 text-sm hover:text-primary transition-colors" href="tomas-de-altura.html">Tomas de Altura</a></li>
+<li><a class="text-slate-500 text-sm hover:text-primary transition-colors" href="diseno-web.html">Diseño Web</a></li>
+<li><a class="text-slate-500 text-sm hover:text-primary transition-colors" href="estrategia-comercial.html">Estrategia Comercial</a></li>
+<li><a class="text-slate-500 text-sm hover:text-primary transition-colors" href="studio-creativo.html">Studio Creativo</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-slate-900 font-bold text-sm uppercase tracking-widest mb-6">Compañía</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 text-sm hover:text-primary transition-colors" href="#">Portafolio</a></li>
+<li><a class="text-slate-500 text-sm hover:text-primary transition-colors" href="#">Política de Privacidad</a></li>
+<li><a class="text-slate-500 text-sm hover:text-primary transition-colors" href="#">Contacto</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-slate-900 font-bold text-sm uppercase tracking-widest mb-6">Legal</h4>
+<p class="text-slate-500 text-xs leading-relaxed">
+            © 2025 Interasky. Todos los derechos reservados.
+        </p>
+<p class="text-slate-400 text-xs mt-4 italic">
+            Transformando el mundo digital un píxel a la vez.
+        </p>
+</div>
+</div>
+</footer>
+<script>
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  });
+</script>
+</body></html>
