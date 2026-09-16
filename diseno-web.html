@@ -3555,6 +3555,38 @@
       syntax: "*";
       inherits: false
     }
+
+    @keyframes marqueeClients {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .animate-marquee-clients {
+      display: flex;
+      width: max-content;
+      animation: marqueeClients 28s linear infinite;
+    }
+
+    .animate-marquee-clients:hover {
+      animation-play-state: paused;
+    }
+
+    .client-card {
+      width: 380px;
+      height: 180px;
+    }
+
+    .client-card img {
+      max-height: 104px;
+      max-width: 260px;
+      width: auto;
+      height: auto;
+    }
   </style>
 </head>
 
@@ -3728,6 +3760,108 @@
                 class="material-symbols-outlined text-primary"
                 style="font-variation-settings:'FILL' 1;">check_circle</span>Fácil navegación en celulares</li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Carrusel de Clientes / Marcas -->
+    <section class="py-10 px-4 bg-surface-container-lowest border-y border-outline-variant/10 overflow-hidden relative">
+      <div class="max-w-7xl mx-auto mb-5 text-center">
+        <label class="text-primary font-bold text-xs uppercase tracking-[0.25em] block mb-1">Confianza &
+          Resultados</label>
+        <h3 class="text-xl md:text-2xl font-black tracking-tight font-brand text-on-surface">Empresas y Marcas que
+          impulsan su éxito con nosotros</h3>
+      </div>
+
+      <!-- Contenedor Marquee con gradientes de desvanecimiento lateral -->
+      <div
+        class="relative w-full overflow-hidden mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+        <!-- Sombras/degradados de desvanecimiento en los bordes -->
+        <div
+          class="pointer-events-none absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-surface-container-lowest to-transparent z-10">
+        </div>
+        <div
+          class="pointer-events-none absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-surface-container-lowest to-transparent z-10">
+        </div>
+
+        <div class="animate-marquee-clients items-center gap-6 py-2">
+          <!-- Primer grupo de logos -->
+          <div class="flex items-center gap-6 shrink-0">
+            <div
+              class="client-card bg-surface-container/60 hover:bg-surface-container border border-outline-variant/10 rounded-xl p-3 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-primary/30 group">
+              <img src="images/LC1 (1).png" alt="Cliente 1"
+                class="object-contain filter group-hover:brightness-110 transition-all" />
+            </div>
+            <div
+              class="client-card bg-surface-container/60 hover:bg-surface-container border border-outline-variant/10 rounded-xl p-3 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-primary/30 group">
+              <img src="images/LC1 (2).png" alt="Cliente 2"
+                class="object-contain filter group-hover:brightness-110 transition-all" />
+            </div>
+            <div
+              class="client-card bg-surface-container/60 hover:bg-surface-container border border-outline-variant/10 rounded-xl p-3 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-primary/30 group">
+              <img src="images/LC1 (3).png" alt="Cliente 3"
+                class="object-contain filter group-hover:brightness-110 transition-all" />
+            </div>
+            <div
+              class="client-card bg-surface-container/60 hover:bg-surface-container border border-outline-variant/10 rounded-xl p-3 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-primary/30 group">
+              <img src="images/LC1 (4).png" alt="Cliente 4"
+                class="object-contain filter group-hover:brightness-110 transition-all" />
+            </div>
+            <div
+              class="client-card bg-surface-container/60 hover:bg-surface-container border border-outline-variant/10 rounded-xl p-3 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-primary/30 group">
+              <img src="images/LC1 (5).png" alt="Cliente 5"
+                class="object-contain filter group-hover:brightness-110 transition-all" />
+            </div>
+            <div
+              class="client-card bg-surface-container/60 hover:bg-surface-container border border-outline-variant/10 rounded-xl p-3 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-primary/30 group">
+              <img src="images/LC1 (6).png" alt="Cliente 6"
+                class="object-contain filter group-hover:brightness-110 transition-all" />
+            </div>
+            <div
+              class="client-card bg-surface-container/60 hover:bg-surface-container border border-outline-variant/10 rounded-xl p-3 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-primary/30 group">
+              <img src="images/LC1 (7).png" alt="Cliente 7"
+                class="object-contain filter group-hover:brightness-110 transition-all" />
+            </div>
+          </div>
+
+          <!-- Segundo grupo de logos para bucle infinito sin saltos -->
+          <div class="flex items-center gap-6 shrink-0" aria-hidden="true">
+            <div
+              class="client-card bg-surface-container/60 hover:bg-surface-container border border-outline-variant/10 rounded-xl p-3 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-primary/30 group">
+              <img src="images/LC1 (1).png" alt=""
+                class="object-contain filter group-hover:brightness-110 transition-all" />
+            </div>
+            <div
+              class="client-card bg-surface-container/60 hover:bg-surface-container border border-outline-variant/10 rounded-xl p-3 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-primary/30 group">
+              <img src="images/LC1 (2).png" alt=""
+                class="object-contain filter group-hover:brightness-110 transition-all" />
+            </div>
+            <div
+              class="client-card bg-surface-container/60 hover:bg-surface-container border border-outline-variant/10 rounded-xl p-3 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-primary/30 group">
+              <img src="images/LC1 (3).png" alt=""
+                class="object-contain filter group-hover:brightness-110 transition-all" />
+            </div>
+            <div
+              class="client-card bg-surface-container/60 hover:bg-surface-container border border-outline-variant/10 rounded-xl p-3 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-primary/30 group">
+              <img src="images/LC1 (4).png" alt=""
+                class="object-contain filter group-hover:brightness-110 transition-all" />
+            </div>
+            <div
+              class="client-card bg-surface-container/60 hover:bg-surface-container border border-outline-variant/10 rounded-xl p-3 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-primary/30 group">
+              <img src="images/LC1 (5).png" alt=""
+                class="object-contain filter group-hover:brightness-110 transition-all" />
+            </div>
+            <div
+              class="client-card bg-surface-container/60 hover:bg-surface-container border border-outline-variant/10 rounded-xl p-3 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-primary/30 group">
+              <img src="images/LC1 (6).png" alt=""
+                class="object-contain filter group-hover:brightness-110 transition-all" />
+            </div>
+            <div
+              class="client-card bg-surface-container/60 hover:bg-surface-container border border-outline-variant/10 rounded-xl p-3 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-primary/30 group">
+              <img src="images/LC1 (7).png" alt=""
+                class="object-contain filter group-hover:brightness-110 transition-all" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
